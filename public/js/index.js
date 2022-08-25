@@ -1,4 +1,4 @@
-const signUpButton = document.querySelector('input[type=button]')
+const signUpButton = document.querySelector('.btn')
 const errorMessage = document.querySelectorAll('.error-message')
 
 const fName = document.getElementsByName('first-name')[0]
@@ -7,7 +7,9 @@ const email = document.getElementsByName('email')[0]
 const password = document.getElementsByName('password')[0]
 
 function showErrorMessage() {
-    signUpButton.addEventListener('click', () => {
+    signUpButton.addEventListener('click', (event) => {
+        event.preventDefault()
+
         if (fName.value === '') {
             errorMessage[0].style.display = 'block'
             fName.classList.add('error')
