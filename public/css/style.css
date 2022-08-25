@@ -158,6 +158,7 @@ form p span {
   margin-top: -0.625rem;
   margin-bottom: 1.5rem;
   text-align: right;
+  font-style: italic;
 }
 
 @media (max-width: 1150px) {
