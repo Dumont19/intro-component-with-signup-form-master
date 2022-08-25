@@ -101,23 +101,27 @@ form p
         color: variables.$red
         font-weight: 600
 
-.error
-    border: 2px solid variables.$red
-    background-image: url('../images/icon-error.svg')
-    background-repeat: no-repeat
-    background-position: 95%
-
-.error::placeholder 
-    color: variables.$red
-
-.error-message
+.input small
     display: none
 
-.error-message p
+.input.error input
+    border: 2px solid variables.$red
+    margin-bottom: 0.625rem
+    background-image: url('../images/icon-error.svg')
+    background-repeat: no-repeat
+    background-position: 95% 
+
+.input.error input::placeholder
+    color: transparent
+
+.input.error input[name=email]::placeholder
+    color: variables.$red
+
+.input.error small
+    display: block
     color: variables.$red
     font-weight: 500
-    font-size:.75rem
-    margin-top:-0.625rem
+    font-size: .75rem
     margin-bottom: 1.5rem
     text-align: right
     font-style: italic
@@ -127,9 +131,14 @@ form p
         display: flex
         flex-direction: column
         max-width: 750px
+        margin: 3rem
+
+    .info h1
+        text-align: center
 
     .info p 
         margin-bottom: 1.5rem
+        text-align: center
 
 @media (max-width: 769px)
     .container
@@ -140,6 +149,7 @@ form p
         align-items: center
         justify-content: center
         max-width: 330px
+        margin: 0
         padding: 6.25rem 0
 
     .info h1

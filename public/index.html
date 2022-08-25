@@ -26,24 +26,24 @@
     <section class="form">
       <div class="blue-box"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
       <form>
-        <input  type="text" name="first-name" id="first-name" placeholder="First Name">
-        <div class="error-message f-name">
-          <p>First Name cannot be empty</p>
+        <div class="input">
+          <input autocomplete="no" type="text" name="first-name" id="first-name" placeholder="First Name">
+          <small>First Name cannot be empty</small>
         </div>
 
-        <input  type="text" name="last-name" id="last-name" placeholder="Last Name">
-        <div class="error-message l-name">
-          <p>Last name cannot be empty</p>
+        <div class="input">
+          <input autocomplete="no" type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <small>Last name cannot be empty</small>
         </div>
 
-        <input type="email" name="email" id="email" placeholder="Email Adress">
-        <div class="error-message email">
-          <p>Looks like this is not an email</p>
+        <div class="input">
+          <input autocomplete="no" type="email" name="email" id="email" placeholder="Email Adress">
+          <small>Looks like this is not an email</small>
         </div>
 
-        <input type="password" name="password" id="password" placeholder="Password">
-        <div class="error-message password">
-          <p>Password cannot be empty</p>
+        <div class="input">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <small>Password cannot be empty</small>
         </div>
 
         <button class="btn" type="submit">Claim your free trial</button>

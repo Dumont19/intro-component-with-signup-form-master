@@ -15,10 +15,10 @@ body {
   background-color: hsl(0deg, 100%, 74%);
   background-image: url("../images/bg-intro-desktop.png");
   background-repeat: no-repeat;
-  background-size: 100% 100vmin;
+  background-size: 100% 100%;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   body {
     background-image: url("../images/bg-intro-mobile.png");
     background-repeat: no-repeat;
@@ -136,26 +136,31 @@ form p span {
   font-weight: 600;
 }
 
-.error {
+.input small {
+  display: none;
+}
+
+.input.error input {
   border: 2px solid hsl(0deg, 100%, 74%);
+  margin-bottom: 0.625rem;
   background-image: url("../images/icon-error.svg");
   background-repeat: no-repeat;
   background-position: 95%;
 }
 
-.error::placeholder {
+.input.error input::placeholder {
+  color: transparent;
+}
+
+.input.error input[name=email]::placeholder {
   color: hsl(0deg, 100%, 74%);
 }
 
-.error-message {
-  display: none;
-}
-
-.error-message p {
+.input.error small {
+  display: block;
   color: hsl(0deg, 100%, 74%);
   font-weight: 500;
   font-size: 0.75rem;
-  margin-top: -0.625rem;
   margin-bottom: 1.5rem;
   text-align: right;
   font-style: italic;
@@ -166,9 +171,14 @@ form p span {
     display: flex;
     flex-direction: column;
     max-width: 750px;
+    margin: 3rem;
+  }
+  .info h1 {
+    text-align: center;
   }
   .info p {
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 }
 @media (max-width: 769px) {
@@ -181,6 +191,7 @@ form p span {
     align-items: center;
     justify-content: center;
     max-width: 330px;
+    margin: 0;
     padding: 6.25rem 0;
   }
   .info h1 {
