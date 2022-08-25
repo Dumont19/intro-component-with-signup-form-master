@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="js/index.js"></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="container">
+    <section class="info">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="form">
+      <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      <form>
+        <input  type="text" name="first-name" id="first-name" placeholder="First Name">
+        <div class="error-message f-name">
+          <p>First Name cannot be empty</p>
+        </div>
+
+        <input  type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <div class="error-message l-name">
+          <p>Last name cannot be empty</p>
+        </div>
+
+        <input type="email" name="email" id="email" placeholder="Email Adress">
+        <div class="error-message email">
+          <p>Looks like this is not an email</p>
+        </div>
+
+        <input type="password" name="password" id="password" placeholder="Password">
+        <div class="error-message password">
+          <p>Password cannot be empty</p>
+        </div>
+
+        <input type="button" value="Claim your free trial">
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

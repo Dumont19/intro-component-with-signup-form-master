@@ -1,0 +1,30 @@
+@use 'variables'
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    min-height: 100vh
+    font-family: variables.$font-poppins
+    font-size: 16px
+    background-color: variables.$red
+    background-image: url('../images/bg-intro-desktop.png')
+    background-repeat: no-repeat
+    background-size: 100% 100vmin
+    
+    
+@media ( max-width: 550px )
+    body
+        background-image: url('../images/bg-intro-mobile.png')
+        background-repeat: no-repeat
+        background-size: cover
+
+            
+        
+
