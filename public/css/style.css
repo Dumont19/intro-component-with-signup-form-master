@@ -69,6 +69,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+.form a {
+  font-size: 0.7rem;
+  color: hsl(246deg, 25%, 77%);
+  text-align: center;
+}
+.form a span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 600;
+}
 
 form {
   display: flex;
@@ -116,6 +125,9 @@ input[placeholder] {
 }
 .btn:hover {
   background-color: hsl(154deg, 59%, 65%);
+}
+.btn:active {
+  border-bottom: 0px solid hsl(154deg, 59%, 45%);
 }
 
 form p {
