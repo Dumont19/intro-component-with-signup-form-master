@@ -70,13 +70,9 @@ body {
   flex-direction: column;
 }
 .form a {
-  font-size: 0.7rem;
-  color: hsl(246deg, 25%, 77%);
-  text-align: center;
-}
-.form a span {
   color: hsl(0deg, 100%, 74%);
   font-weight: 600;
+  text-decoration: none;
 }
 
 form {
