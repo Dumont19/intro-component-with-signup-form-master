@@ -33,3 +33,4 @@ function checkEmail() {
         email.parentElement.classList.remove('error')
     }
 }
+
